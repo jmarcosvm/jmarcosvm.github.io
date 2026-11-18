@@ -56,6 +56,18 @@
     setMenu(false);
   });
 
+  /* ----- Abre o grupo de entregas ao navegar para #casos ----- */
+  var grupo = document.getElementById('grupo-entregas');
+  function openGroupFromHash() {
+    if (grupo && location.hash === '#casos') grupo.open = true;
+  }
+  openGroupFromHash();
+  window.addEventListener('hashchange', openGroupFromHash);
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href="#casos"]');
+    if (a && grupo) grupo.open = true;
+  });
+
   /* ----- Fio de rastreio e seção ativa ----- */
   var main = document.querySelector('main');
   var fill = document.getElementById('trace-fill');

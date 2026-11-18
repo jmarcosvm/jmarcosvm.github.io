@@ -203,7 +203,7 @@ a:hover { text-decoration-thickness: 2px; }
 .hero-grid { display: grid; gap: 36px; align-items: end; }
 .name {
   font-family: var(--font-title); font-weight: 700;
-  font-size: clamp(2.5rem, 10.4vw, 7rem);
+  font-size: clamp(2.2rem, 10.4vw, 7rem);
   line-height: .96; letter-spacing: -.035em;
 }
 .name-line { display: block; overflow: hidden; padding-bottom: .06em; }
@@ -232,6 +232,9 @@ a:hover { text-decoration-thickness: 2px; }
   .hero-grid { grid-template-columns: 1fr auto; gap: 56px; }
   .portrait { order: 2; }
   .portrait img { width: 200px; height: 200px; }
+}
+@media (min-width: 760px) and (max-width: 1199px) {
+  .name { font-size: clamp(3rem, 7.4vw, 5rem); }
 }
 @media (min-width: 1200px) {
   .name { font-size: clamp(5rem, 8.4vw, 8.5rem); }
@@ -337,16 +340,34 @@ a:hover { text-decoration-thickness: 2px; }
 .made { color: var(--muted); font-size: .95rem; margin-bottom: 10px; }
 .links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; font-weight: 500; font-size: .95rem; }
 
+/* ===== Grupo: Entregas e resultados ===== */
+.grupo { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.grupo > summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  padding: 22px 0;
+}
+.grupo > summary::-webkit-details-marker { display: none; }
+.grupo > summary .h2 { margin: 0; transition: color .2s ease; }
+.grupo > summary:hover .h2 { color: var(--accent); }
+.grupo[open] > summary .caso-cta { font-size: 0; gap: 0; }
+.grupo[open] > summary .caso-cta::before { content: "Ocultar"; font-size: .95rem; margin-right: 10px; }
+.grupo[open] > summary .caso-cta::after { transform: translateY(2px) rotate(225deg); }
+.grupo-body { padding: 8px 0 24px; animation: open-in .35s ease both; }
+.grupo-body .lede { margin-top: 0; }
+.grupo .cases { border-top: 0; }
+.grupo .caso:last-child { border-bottom: 0; }
+
 /* ===== Casos ===== */
 .cases { border-top: 1px solid var(--line); }
 .caso { border-bottom: 1px solid var(--line); }
 .caso summary {
   list-style: none; cursor: pointer;
   display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; align-items: center;
-  padding: 22px 0;
+  padding: 18px 0;
 }
 .caso summary::-webkit-details-marker { display: none; }
-.caso-title h3 { font-family: var(--font-title); font-weight: 600; font-size: 1.3125rem; letter-spacing: -.015em; line-height: 1.25; margin-bottom: 4px; transition: color .2s ease; }
+.caso-title h3 { font-family: var(--font-title); font-weight: 600; font-size: 1.3125rem; letter-spacing: -.015em; line-height: 1.25; margin: 0; transition: color .2s ease; }
 .caso-sum { display: block; color: var(--muted); font-size: 1rem; line-height: 1.5; }
 .caso-cta {
   display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
@@ -417,6 +438,13 @@ a:hover { text-decoration-thickness: 2px; }
 /* ===== Rodapé ===== */
 .footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
 .footer p { margin: 0 0 4px; }
+.verse {
+  max-width: 46ch; margin: 0 0 24px; padding-left: 14px;
+  border-left: 1px solid var(--accent);
+  color: var(--muted); font-size: .95rem; line-height: 1.5;
+  animation: fade-in .7s .25s ease both;
+}
+.verse cite { display: block; margin-top: 2px; font-style: normal; font-weight: 500; color: var(--text); }
 
 /* ===== Responsivo ===== */
 @media (max-width: 860px) {
