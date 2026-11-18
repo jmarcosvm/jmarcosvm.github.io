@@ -200,7 +200,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ===== Hero ===== */
 .hero { padding: calc(var(--bar-h) + 56px) 0 72px; }
-.hero-grid { display: grid; gap: 36px; align-items: end; }
+.hero-grid { display: grid; gap: 36px; align-items: start; }
 .name {
   font-family: var(--font-title); font-weight: 700;
   font-size: clamp(2.2rem, 10.4vw, 7rem);
@@ -229,8 +229,12 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 @media (min-width: 760px) {
-  .hero-grid { grid-template-columns: 1fr auto; gap: 56px; }
-  .portrait { order: 2; }
+  .hero-grid { grid-template-columns: 1fr auto; column-gap: 56px; row-gap: 0; }
+  .hero-text { display: contents; }
+  .name { grid-column: 1; grid-row: 1; }
+  .role, .value, .actions { grid-column: 1; }
+  .actions { justify-self: start; }
+  .portrait { order: 0; grid-column: 2; grid-row: 1; align-self: center; }
   .portrait img { width: 200px; height: 200px; }
 }
 @media (min-width: 760px) and (max-width: 1199px) {
