@@ -7,7 +7,7 @@ Site estático em `index.html`, `style.css` e `script.js`, sem framework e sem b
 ```
 index.html   style.css   script.js
 assets/      foto, imagem de compartilhamento e ícone
-docs/        currículos em PDF (CV_AI_Builder, CV_IA_Operacoes, CV_Engenharia_de_Dados, CV_Ciencia_de_Dados)
+docs/        currículos em PDF (CV_AI_Builder, CV_IA_Operacoes e CV_Engenharia_de_Dados)
 ```
 
 ## Rodar localmente

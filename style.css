@@ -14,7 +14,7 @@
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --gutter: 16px;
-  --col: 1040px;
+  --col: 1280px;
   --read: 68ch;
   --radius: 8px;
   --bar-h: 64px;
@@ -174,7 +174,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ===== Fio de rastreio ===== */
 .trace { display: none; }
-@media (min-width: 1180px) {
+@media (min-width: 1400px) {
   main { position: relative; }
   .trace {
     display: block; position: absolute; top: 0; bottom: 0;
@@ -232,6 +232,10 @@ a:hover { text-decoration-thickness: 2px; }
   .hero-grid { grid-template-columns: 1fr auto; gap: 56px; }
   .portrait { order: 2; }
   .portrait img { width: 200px; height: 200px; }
+}
+@media (min-width: 1200px) {
+  .name { font-size: clamp(5rem, 8.4vw, 8.5rem); }
+  .value { max-width: 38em; font-size: 1.3125rem; }
 }
 
 /* ===== Botões ===== */
@@ -304,8 +308,9 @@ a:hover { text-decoration-thickness: 2px; }
 .proj { padding: 36px 0; border-bottom: 1px solid var(--line); display: grid; gap: 20px; }
 .proj-head h3 { font-family: var(--font-title); font-weight: 600; font-size: 1.5rem; letter-spacing: -.02em; line-height: 1.2; margin-bottom: 10px; }
 .proj-body > p:first-child { max-width: var(--read); }
+.proj-body > p:first-child { max-width: 80ch; }
 @media (min-width: 900px) {
-  .proj { grid-template-columns: 300px 1fr; gap: 48px; }
+  .proj { grid-template-columns: 320px 1fr; gap: 64px; }
   .proj-head { position: sticky; top: calc(var(--bar-h) + 24px); align-self: start; }
 }
 
@@ -366,7 +371,7 @@ a:hover { text-decoration-thickness: 2px; }
 .story { display: grid; gap: 18px; }
 .story > div { display: grid; gap: 4px; }
 .story dt { font-family: var(--font-title); font-weight: 600; font-size: 1rem; color: var(--text); }
-.story dd { color: var(--muted); max-width: var(--read); font-size: 1.0625rem; }
+.story dd { color: var(--muted); max-width: 80ch; font-size: 1.0625rem; }
 .story dd p { margin-bottom: .7em; }
 .story dd p:last-child { margin-bottom: 0; }
 .story dd ul { display: grid; gap: 10px; }
@@ -398,6 +403,7 @@ a:hover { text-decoration-thickness: 2px; }
 .edu p, .edu li { color: var(--muted); font-size: 1rem; margin-bottom: 8px; max-width: 48ch; }
 .edu strong { color: var(--text); font-weight: 600; }
 @media (min-width: 760px) { .edu { grid-template-columns: repeat(2, 1fr); gap: 40px 56px; } }
+@media (min-width: 1100px) { .edu { grid-template-columns: repeat(4, 1fr); gap: 40px; } }
 
 /* ===== Contato ===== */
 .contact { border-top: 1px solid var(--line); margin-bottom: 48px; max-width: 640px; }
