@@ -1,0 +1,13 @@
+# Arquivos de apoio privados (nunca publicar)
+portfolio_especificacao_1.md
+CONTEXTO_COMPLETO_Joao_Marcos.md
+portfolio_juntos_casos.md
+
+# Foto original (só a versão otimizada em assets/ vai para o site)
+Minha foto/
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/
+graphify-out/

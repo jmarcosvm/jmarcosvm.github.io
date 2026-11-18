@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Marcos Vilaça Marques | Dados, IA e Automação</title>
+  <meta name="description" content="Portfólio de João Marcos Vilaça Marques: estagiário de People Analytics, estudante de Desenvolvimento de Software na FATEC. Dados, BI, automação e IA aplicada com revisão humana.">
+  <meta name="theme-color" content="#0E0E10">
+  <link rel="canonical" href="https://jmarcosvm.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="João Marcos Vilaça Marques | Dados, IA e Automação">
+  <meta property="og:description" content="Da qualidade em ambiente regulado a People Analytics com IA. Projetos, casos e currículo.">
+  <meta property="og:url" content="https://jmarcosvm.github.io/">
+  <meta property="og:image" content="https://jmarcosvm.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="João Marcos Vilaça Marques, Dados, IA e Automação">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('tema');
+        if (t === 'claro') document.documentElement.setAttribute('data-theme', 'light');
+        if (t === 'escuro') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#topo" aria-label="João Marcos, voltar ao topo">JM</a>
+
+      <nav class="nav" id="menu" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#casos">Casos</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="topbar-tools">
+        <details class="cv-menu">
+          <summary>Currículo</summary>
+          <ul class="cv-list">
+            <li><a href="docs/CV_AI_Builder.pdf" download>AI Builder</a></li>
+            <li><a href="docs/CV_IA_Operacoes.pdf" download>IA e Operações</a></li>
+            <li><a href="docs/CV_Engenharia_de_Dados.pdf" download>Engenharia de Dados</a></li>
+            <li><a href="docs/CV_Ciencia_de_Dados.pdf" download>Ciência de Dados</a></li>
+          </ul>
+        </details>
+
+        <button class="icon-btn" id="tema" type="button" aria-label="Alternar entre tema claro e escuro">
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        </button>
+
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="trace" aria-hidden="true"><div class="trace-fill intro" id="trace-fill"></div></div>
+
+    <section class="hero" id="topo" aria-labelledby="nome">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1 id="nome" class="name">
+            <span class="name-line"><span>João Marcos</span></span>
+            <span class="name-line"><span>Vilaça Marques</span></span>
+          </h1>
+          <p class="role">Dados, IA e Automação</p>
+          <p class="value">Transformo bases dispersas em decisão. Uso IA para ganhar velocidade e confiro cada resultado antes de entregar.</p>
+          <div class="actions">
+            <a class="btn btn-solid" href="#projetos">Ver projetos</a>
+            <a class="btn btn-line" href="docs/CV_AI_Builder.pdf" download>Currículo</a>
+            <a class="btn btn-line" href="https://www.linkedin.com/in/jmarcosvilaca" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="assets/joao.webp" width="400" height="400" alt="Retrato de João Marcos sorrindo, de camiseta preta, diante de uma parede de pedra clara.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="sobre" aria-labelledby="t-sobre">
+      <div class="wrap">
+        <h2 id="t-sobre" class="h2">Sobre</h2>
+        <div class="two">
+          <div class="prose">
+            <p>Comecei em qualidade, numa empresa regulada pela ANVISA e pela FDA. Lá aprendi que um bom processo deixa rastro: cada passo documentado, cada resultado conferido. Levo esse hábito para tudo que faço com dados.</p>
+            <p>Hoje sou estagiário de People Analytics na Juntos Somos+. Reúno bases de RH, monto dashboards em Power BI e uso o Claude para automatizar rotinas, sempre revisando o que ele entrega. Fora do trabalho, estudo SQL, Python e Databricks, toco projetos próprios e curso Desenvolvimento de Software Multiplataforma na FATEC Cotia, à noite.</p>
+          </div>
+
+          <ol class="timeline" aria-label="Trajetória">
+            <li>
+              <p class="when">jun/2025 a abr/2026</p>
+              <h3>Aprendiz de Qualidade, Sterigenics</h3>
+              <p>Documentação de processos críticos, não conformidades e rastreabilidade, seguindo normas internas, ANVISA e FDA.</p>
+            </li>
+            <li>
+              <p class="when">abr/2026 até hoje</p>
+              <h3>Estagiário de People Analytics, Juntos Somos+</h3>
+              <p>Dashboards, automações com IA e análises usadas pela Diretoria.</p>
+            </li>
+            <li>
+              <p class="when">2026</p>
+              <h3>Projetos próprios</h3>
+              <p>IFO, MFA e a Jornada de Dados, cada um com o estado real descrito abaixo.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="como" aria-labelledby="t-como">
+      <div class="wrap">
+        <h2 id="t-como" class="h2">Como eu trabalho</h2>
+        <div class="principles">
+          <article>
+            <h3>IA como multiplicador, revisão humana sempre</h3>
+            <p>A IA acelera a leitura, o cálculo e a montagem. Eu confiro cada saída antes de enviar a quem vai usar.</p>
+          </article>
+          <article>
+            <h3>Primeiro a pergunta, depois o código</h3>
+            <p>Antes de abrir qualquer ferramenta, defino o que a decisão precisa responder e com quais dados.</p>
+          </article>
+          <article>
+            <h3>Testo, valido e entrego</h3>
+            <p>Confiro números, olho os casos estranhos e escrevo os limites. Quando não sei, digo que não sei.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="competencias" aria-labelledby="t-comp">
+      <div class="wrap">
+        <h2 id="t-comp" class="h2">Competências</h2>
+        <p class="lede">Agrupadas pelo quanto já usei cada uma, sem inflar.</p>
+
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Prática profissional</h3>
+            <ul class="chips" data-level="pro">
+              <li>Power BI e DAX</li>
+              <li>Power Query</li>
+              <li>Excel avançado</li>
+              <li>Estatística descritiva</li>
+              <li>Claude Cowork e Skills</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Em projeto</h3>
+            <ul class="chips" data-level="proj">
+              <li>Java e Spring Boot</li>
+              <li>PostgreSQL</li>
+              <li>JavaScript, HTML e CSS</li>
+              <li>Git e GitHub</li>
+              <li>APIs REST</li>
+              <li>Python e pandas</li>
+              <li>FastAPI e Pydantic</li>
+              <li>Docker</li>
+              <li>Next.js</li>
+              <li>Cursor, Claude Code e v0</li>
+              <li>LLMs via API</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Em estudo</h3>
+            <ul class="chips" data-level="study">
+              <li>SQL</li>
+              <li>Python para dados</li>
+              <li>Databricks</li>
+              <li>Data Lake (AWS S3)</li>
+              <li>Pipelines de dados</li>
+              <li>Agentes de IA</li>
+              <li>Google Data Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="projetos" aria-labelledby="t-proj">
+      <div class="wrap">
+        <h2 id="t-proj" class="h2">Projetos</h2>
+        <p class="lede">Cada projeto separa o que existe no repositório hoje do que ainda é plano.</p>
+
+        <div class="projects">
+
+          <article class="proj">
+            <header class="proj-head">
+              <h3>MFA, AI Macro Fund Allocator</h3>
+              <p class="status" data-state="done">Back-end concluído, interface integrada</p>
+            </header>
+            <div class="proj-body">
+              <p>Painel que lê indicadores macroeconômicos do Banco Central e sugere uma carteira por classe de ativo. O princípio do projeto: o LLM interpreta e escreve, o código decide. As regras são determinísticas e a saída do LLM passa por validação com Pydantic, com carteira base e texto fixo como plano B.</p>
+              <div class="split">
+                <div>
+                  <h4>No repositório hoje</h4>
+                  <ul>
+                    <li>API em FastAPI com dados do Banco Central</li>
+                    <li>Chamadas diretas a LLMs (Gemini e NVIDIA) via httpx, sem biblioteca intermediária por risco de cadeia de suprimentos</li>
+                    <li>Interface em Next.js e Recharts, gerada no v0 e integrada à API</li>
+                    <li>API publicada na nuvem com Docker</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Planejado</h4>
+                  <ul>
+                    <li>Atualização do README com o passo a passo</li>
+                    <li>Link público da interface</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="notice"><strong>Aviso:</strong> a API roda em plano gratuito e dorme após 15 minutos parada. O primeiro acesso leva de 22 a 25 segundos para acordar. É uma simulação educacional, sem recomendação de investimento.</p>
+              <p class="made">Desenvolvido com Cursor, tendo o Claude Code como motor, e v0 na interface.</p>
+              <p class="links">
+                <a href="https://github.com/jmarcosvm/MFA-AI-macro-fund-allocator-API" target="_blank" rel="noopener">Repositório da API</a>
+                <a href="https://github.com/jmarcosvm/MFA-AI-Macro-Fund-Allocator-Web" target="_blank" rel="noopener">Repositório da interface</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="proj">
+            <header class="proj-head">
+              <h3>IFO V1, Organizador Financeiro Inteligente</h3>
+              <p class="status" data-state="done">Concluído</p>
+            </header>
+            <div class="proj-body">
+              <p>Sistema de gestão financeira pessoal. Orçamento 50/30/20 editável, metas, despesas recorrentes e calculadora de investimentos. Ficou em 2º lugar na apresentação do Projeto Integrador da FATEC Cotia, no 1º semestre de 2026.</p>
+              <div class="split">
+                <div>
+                  <h4>No repositório hoje</h4>
+                  <ul>
+                    <li>Java, Spring Boot, PostgreSQL e autenticação com JWT</li>
+                    <li>Documentação com UML e BPMN</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Como foi feito</h4>
+                  <ul>
+                    <li>Desenvolvi individualmente, com apoio do Claude Code</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="links">
+                <a href="https://github.com/jmarcosvm/IFO-Organizador-Financeiro" target="_blank" rel="noopener">Repositório</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="proj">
+            <header class="proj-head">
+              <h3>IFO V2, evolução em grupo</h3>
+              <p class="status" data-state="doing">Em desenvolvimento</p>
+            </header>
+            <div class="proj-body">
+              <p>Segunda versão do IFO, feita por uma equipe de 5 pessoas. Hoje o repositório está na fase de escopo e protótipo.</p>
+              <div class="split">
+                <div>
+                  <h4>No repositório hoje</h4>
+                  <ul>
+                    <li>Escopo (v3.3) com requisitos RF01 a RF25</li>
+                    <li>Logotipo</li>
+                    <li>Protótipo navegável em HTML, CSS e JavaScript, com dados fictícios. Login, 2FA e assistente são simulados e não chamam nenhum modelo de IA</li>
+                    <li>Estudo de usabilidade: avaliação heurística e teste com 10 participantes simulados por agentes de IA (92,7% de sucesso nas tarefas, nota SUS média de 71,3). Resultados exploratórios, não substituem teste com pessoas</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Planejado</h4>
+                  <ul>
+                    <li>Back-end em Node.js e Express</li>
+                    <li>MySQL e MongoDB</li>
+                    <li>Front-end em React com Vite e Tailwind, gráficos com Chart.js</li>
+                    <li>2FA por e-mail</li>
+                    <li>Assistente piloto com Gemini</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="links">
+                <a href="https://github.com/jmarcosvm/IFO-V2---Organizador-Financeiro" target="_blank" rel="noopener">Repositório</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="proj">
+            <header class="proj-head">
+              <h3>Jornada de Dados, comércio exterior do Brasil</h3>
+              <p class="status" data-state="doing">Em andamento, etapa 0</p>
+            </header>
+            <div class="proj-body">
+              <p>Pipeline de dados abertos de comércio exterior, do Comex Stat (MDIC) e do IBGE. Estou na etapa de preparação: o domínio, as perguntas e as decisões são meus.</p>
+              <div class="split">
+                <div>
+                  <h4>No repositório hoje</h4>
+                  <ul>
+                    <li>README</li>
+                    <li>Roadmap</li>
+                    <li>Arquitetura</li>
+                    <li>Plano de perguntas</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Planejado</h4>
+                  <ul>
+                    <li>Databricks Free Edition</li>
+                    <li>Arquitetura medalhão (bronze, silver e gold)</li>
+                    <li>Testes de qualidade antes da camada gold</li>
+                    <li>Dashboards AI/BI e agente Genie sobre a gold</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="made">Técnica inspirada na Imersão Jornada de Dados no Databricks, de lvgalvao.</p>
+              <p class="links">
+                <a href="https://github.com/jmarcosvm/jornada-dados-comercio-exterior" target="_blank" rel="noopener">Repositório</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="casos" aria-labelledby="t-casos">
+      <div class="wrap">
+        <h2 id="t-casos" class="h2">Casos da Juntos</h2>
+        <p class="lede">O que fiz no estágio, sem nomes, valores internos nem bases reais. Tempos são estimativas pessoais, não medições.</p>
+
+        <div class="cases">
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Quem pode pedir demissão nos próximos 6 meses</h3>
+                <span class="caso-sum">Classificação de risco para a área de pessoas agir antes da saída.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Problema</dt><dd>A área de pessoas queria saber com antecedência quem tinha mais chance de pedir demissão nos 6 meses seguintes, e por quê, para agir antes: conversa de carreira, revisão de trilha, retenção.</dd></div>
+                <div><dt>O que foi feito</dt><dd>Uma classificação do quadro em grupos de risco, com a taxa histórica de cada grupo. Entregamos planilha de resultados, material executivo, dashboard e uma skill do Claude para atualizar a cada semestre.</dd></div>
+                <div><dt>Como a IA entra</dt><dd>Eu e o analista juntamos e tratamos as bases: colunas, outliers e relacionamentos entre tabelas. Explicamos o objetivo ao Claude e pedimos uma análise profunda dos padrões de desligamento. O Claude analisou, escreveu o código e montou os materiais. Nós instruímos, conferimos e repetimos até chegar a padrões aceitáveis. Eu não escrevi código.</dd></div>
+                <div><dt>Decisões</dt><dd>
+                  <ul>
+                    <li>A janela de 6 meses foi ideia minha. Testei formas de ler os dados e a mais fácil de explicar foi olhar um grupo de pessoas com certas características e ver quem saiu nos 6 meses seguintes. Ela cabe no tempo médio para conseguir emprego, de 4 a 9 meses, segundo a <a href="https://www.catho.com.br/carreira-sucesso/quanto-tempo-leva-para-conseguir-um-emprego/" target="_blank" rel="noopener">Catho</a>.</li>
+                    <li>Idade, gênero e raça ficaram de fora de propósito. Essa regra e as regras de risco dos talentos foram definidas pelo analista.</li>
+                    <li>A técnica é segmentação por regras, com taxa histórica por coorte semestral. O Claude também testou machine learning, que não superou as regras na validação por semestre. Ficaram as regras, por serem explicáveis e por haver poucos eventos.</li>
+                  </ul>
+                </dd></div>
+              </dl>
+              <dl class="quem" aria-label="Quem fez o quê">
+                <div><dt>Eu</dt><dd>Tratamento das bases, janela de 6 meses, orientação do Claude e revisão.</dd></div>
+                <div><dt>Analista</dt><dd>Variáveis proibidas, regras dos talentos e checagem final.</dd></div>
+                <div><dt>Claude</dt><dd>Análise, padrões, código e materiais.</dd></div>
+                <div><dt>Gestor e recrutamento</dt><dd>Validação dos resultados.</dd></div>
+              </dl>
+              <dl class="story">
+                <div><dt>Resultado</dt><dd>A Diretoria elogiou a qualidade e a clareza das informações. O projeto é recente: o time de pessoas está mapeando conversas de carreira e a permanência dos talentos em risco.</dd></div>
+                <div><dt>Limites</dt><dd>Poucos eventos. É taxa histórica do grupo, não probabilidade individual, então serve mais para priorizar do que para prever. Ainda sem validação em período futuro. Algumas categorias são manuais. Quem decide sobre cada pessoa é a área de pessoas.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Auditorias e relatórios mensais com skills</h3>
+                <span class="caso-sum">Três rotinas que seguem uma receita escrita e terminam numa conferência minha.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Problema</dt><dd>Relatórios e conferências mensais eram refeitos à mão, com risco de erro e muito tempo gasto em tarefas repetidas.</dd></div>
+                <div><dt>O que foi feito</dt><dd>
+                  <ul>
+                    <li><strong>Decks de mobilidade.</strong> A skill gera dois decks em PowerPoint, com gráficos e tabelas editáveis, do início do ano até o mês pedido. Eu atualizo a base, dou o comando e confiro no dashboard. De cerca de 2 a 3 horas para até 20 minutos (estimativa pessoal).</li>
+                    <li><strong>Auditoria dos planos de saúde e odontológico.</strong> Todo mês confere se o desconto em folha bate com a cobrança da operadora, num arquivo grande e num PDF de centenas de páginas. A skill cruza as bases, extrai a cobrança e escreve uma observação por pessoa. De cerca de 2 a 3 horas para cerca de 30 minutos (estimativa pessoal).</li>
+                    <li><strong>Relatório de custos de mobilidade dos consultores.</strong> Compara custo de carro por demanda e de carro fixo, em três abas: resumo, custos por consultor e comparação entre os modelos. Já era rápido. O ganho foi em qualidade e em quantidade de dados úteis.</li>
+                  </ul>
+                </dd></div>
+                <div><dt>Como a IA entra</dt><dd>O Claude lê, cruza e monta os materiais seguindo a receita da skill. Eu reviso as saídas, confiro os dados e envio a quem vai usar.</dd></div>
+              </dl>
+              <dl class="quem" aria-label="Quem fez o quê">
+                <div><dt>Eu</dt><dd>Criei as skills sozinho, reviso cada saída e envio.</dd></div>
+                <div><dt>Analista</dt><dd>Validou a primeira saída de cada skill.</dd></div>
+                <div><dt>Claude</dt><dd>Leitura, cruzamento de bases e montagem dos materiais.</dd></div>
+              </dl>
+              <dl class="story">
+                <div><dt>Limites</dt><dd>Nomes com grafia diferente exigem conferência. Se a base de combustível chega incompleta, a variação do relatório de custos não é conclusiva.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Custo por colaborador e quadros de dispêndio</h3>
+                <span class="caso-sum">Rotina semanal para o incentivo fiscal de P&amp;D, com gravação só depois da minha aprovação.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Problema</dt><dd>Calcular o custo mensal de cada pessoa e ratear por projeto exige cruzar muitas planilhas com a participação de cada um. Os quadros de gestão também precisam ficar coerentes entre si.</dd></div>
+                <div><dt>O que foi feito</dt><dd>Uma skill que gera duas planilhas, uma de custo por colaborador e outra de custo total e por projeto, e que confere e atualiza os quadros. Há uma versão agendada que roda toda sexta de manhã, prepara tudo e avisa por notificação. A gravação nos quadros depende da minha aprovação.</dd></div>
+                <div><dt>Como a IA entra</dt><dd>O Claude lê, casa os dados, calcula e recalcula de forma independente para conferir. Eu decido os casos especiais e valido o resultado.</dd></div>
+                <div><dt>Resultado</dt><dd>Roda toda semana há cerca de 1 mês, sem erros da automação. De cerca de 1 a 2 horas para cerca de 15 minutos (estimativa pessoal, só a parte das planilhas era feita à mão antes).</dd></div>
+                <div><dt>Limites</dt><dd>Depende do computador ligado. Casos novos, como troca de matrícula ou contratação depois da previsão, ainda pedem decisão minha. O formato dos percentuais no quadro já mudou uma vez e exigiu checagem.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Duas rotinas agendadas</h3>
+                <span class="caso-sum">Cadastro de cultura e desempenho, e cobrança semanal de pendências de ponto.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Base de cultura e desempenho</dt><dd>
+                  <p>Manter o cadastro igual à base de ativos do RH. Essa base guarda histórico, avaliações, PDIs e organograma, e sustenta remuneração variável, performance review e avaliação dos estagiários.</p>
+                  <p>A rotina roda a cada 15 dias: exporta a base, compara com os ativos, inclui os admitidos, deixa em off os desligados, prepara as planilhas de importação e valida. Eu reviso e confiro, e só então a importação sobe.</p>
+                  <p>Contexto: no ano anterior, o analista mantinha uma automação em script Python, sem IA, difícil de manter. Ela se perdeu, o time passou a atualizar à mão e pediu para automatizar. Hoje são 2 execuções com sucesso, em cerca de 1 mês.</p>
+                </dd></div>
+                <div><dt>Pendências e ocorrências de ponto dos colaboradores</dt><dd>
+                  <p>Antes, a cobrança semanal aos gestores sobre aprovações pendentes e inconsistências era manual. A rotina lê os relatórios, cruza colaborador e gestor e prepara uma mensagem por gestor. O envio só acontece depois da minha aprovação, e a coordenadora de DHO autorizou as mensagens.</p>
+                  <p>Roda toda semana há mais de 2 meses, sem erros de execução. Só alguns filtros não estavam definidos no começo e precisaram de revisão. Segue em refinamento com o time de DHO. Sem comparação de tempo, porque eu não fazia essa tarefa antes.</p>
+                </dd></div>
+                <div><dt>Como a IA entra</dt><dd>O Claude faz a rotina inteira. Eu reviso e confiro antes de qualquer envio ou importação.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Transição do plano de saúde</h3>
+                <span class="caso-sum">Trabalho em equipe para decidir se valia trocar de operadora.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Problema</dt><dd>Diante de um reajuste previsto, a empresa precisava decidir se valia trocar de operadora, comparando custo, rede credenciada e reembolso, e conferir se a proposta final estava em linha com o negociado.</dd></div>
+                <div><dt>O que foi feito</dt><dd>Uma análise comparativa com resumo executivo, estudo completo, material para a reunião e cronograma, mais as conferências da proposta final.</dd></div>
+                <div><dt>Como a IA entra</dt><dd>O Claude foi apoio: leitura de documentos longos, conferência de cálculos, simulação de preço por faixa etária, levantamento de rede por região e montagem de tabelas e apresentações. Na revisão, corrigimos erros dele: uso de base errada, leitura que ignorou a primeira linha de uma planilha e contagem duplicada de hospitais, que gerou uma regra nova.</dd></div>
+              </dl>
+              <dl class="quem" aria-label="Quem fez o quê">
+                <div><dt>Eu</dt><dd>Análises e apresentação, com o analista. Participei das reuniões com a corretora, analisei o contrato e passei as considerações ao gerente. Quando os materiais trouxeram custos diferentes para o mesmo plano, confirmei na reunião e refiz as análises.</dd></div>
+                <div><dt>Analista</dt><dd>Análises e apresentação, comigo.</dd></div>
+                <div><dt>Gerente</dt><dd>Apresentou à Diretoria e conduziu a negociação com o jurídico.</dd></div>
+                <div><dt>Claude</dt><dd>Apoio nas leituras, conferências e montagens.</dd></div>
+              </dl>
+              <dl class="story">
+                <div><dt>Resultado</dt><dd>A troca foi aprovada. A economia estimada é de R$ 660 a 690 mil por ano. É uma estimativa, medida contra o cenário de reajuste previsto, não um resultado auditado.</dd></div>
+                <div><dt>Limites</dt><dd>As bases de vidas da corretora e a interna não se conciliam linha a linha. Parte dos dados internos não pôde ser validada contra documento externo. O ganho de tempo não foi medido.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Geolocalização de 190 colaboradores</h3>
+                <span class="caso-sum">Levantamento de deslocamento para a liderança decidir sobre transporte.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Problema</dt><dd>A liderança precisava definir os meios de transporte mais viáveis para 190 colaboradores.</dd></div>
+                <div><dt>O que foi feito</dt><dd>Para cada pessoa, o levantamento trouxe o tempo médio de deslocamento, a existência de fretado e a facilidade de transporte ferroviário. Depois agrupamos em três: fora do estado de SP, interior de SP e Região Metropolitana.</dd></div>
+                <div><dt>Como a IA entra</dt><dd>O Claude fez as pesquisas na web e o agrupamento. Eu e o analista conferimos. A liderança tomou as decisões.</dd></div>
+                <div><dt>Limites</dt><dd>Os tempos vêm de pesquisa web conferida, não de uma base oficial de trajetos. Nenhum endereço aparece aqui.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+          <details class="caso">
+            <summary>
+              <span class="caso-title">
+                <h3>Gestão de frota</h3>
+                <span class="caso-sum">Em desenvolvimento: automações para custos, pontuação e uso de veículos.</span>
+              </span>
+              <span class="caso-cta">Ver como eu fiz</span>
+            </summary>
+            <div class="caso-body">
+              <dl class="story">
+                <div><dt>Problema</dt><dd>Controlar custos, infrações, pontuação de habilitação e uso de veículos e de transporte por aplicativo dos consultores de campo.</dd></div>
+                <div><dt>Estado</dt><dd><span class="status" data-state="doing">Em desenvolvimento</span> Na fase de implementação das automações, feitas com o Claude. São quatro módulos: fechamento mensal de medição do carro fixo, painel de pontuação, relatório de custos de carro por demanda e fixo, e verificação do uso de corridas.</dd></div>
+                <div><dt>Quem usa</dt><dd>O time de People Analytics, o analista que atua comigo no projeto e a liderança do cluster Comercial. Infrações e pontuação são do time de DP, que confirmou a premissa de indicação do condutor.</dd></div>
+                <div><dt>Limites</dt><dd>Em evolução, sem resultado quantificado.</dd></div>
+              </dl>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="formacao" aria-labelledby="t-form">
+      <div class="wrap">
+        <h2 id="t-form" class="h2">Formação e cursos</h2>
+        <div class="edu">
+          <div>
+            <h3>Formação</h3>
+            <p><strong>Desenvolvimento de Software Multiplataforma</strong><br>FATEC Cotia, noturno. Ago/2025 a jul/2028 (previsão).</p>
+          </div>
+          <div>
+            <h3>Cursos</h3>
+            <ul>
+              <li>Imersão Jornada de Dados (duas edições)</li>
+              <li>Google Data Analytics, em andamento: planilhas, SQL, visualização de dados e linguagem R</li>
+              <li>Microsoft Office Essencial: Word, Excel, PowerPoint e Power BI</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Conquistas</h3>
+            <ul>
+              <li>Medalha de bronze na Olimpíada Brasileira de Astronomia e Astronáutica, jan/2025</li>
+              <li>Medalha de bronze nas Olimpíadas de Conhecimento do Sistema Etapa, ago/2024</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês intermediário: leio e escrevo bem, falo menos</li>
+              <li>Espanhol básico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block-last" id="contato" aria-labelledby="t-contato">
+      <div class="wrap">
+        <h2 id="t-contato" class="h2">Contato</h2>
+        <p class="lede">Busco estágio em dados, BI, IA e automação. O jeito mais rápido é por e-mail ou LinkedIn.</p>
+        <ul class="contact">
+          <li><span>E-mail</span><a href="mailto:jmarcosvm.ad@gmail.com">jmarcosvm.ad@gmail.com</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/jmarcosvilaca" target="_blank" rel="noopener">linkedin.com/in/jmarcosvilaca</a></li>
+          <li><span>GitHub</span><a href="https://github.com/jmarcosvm" target="_blank" rel="noopener">github.com/jmarcosvm</a></li>
+        </ul>
+
+        <h3 class="cv-title">Currículo em PDF, uma página</h3>
+        <p class="cv-hint">Escolha a versão mais próxima da vaga.</p>
+        <div class="cv-grid">
+          <a class="btn btn-solid" href="docs/CV_AI_Builder.pdf" download>AI Builder</a>
+          <a class="btn btn-line" href="docs/CV_IA_Operacoes.pdf" download>IA e Operações</a>
+          <a class="btn btn-line" href="docs/CV_Engenharia_de_Dados.pdf" download>Engenharia de Dados</a>
+          <a class="btn btn-line" href="docs/CV_Ciencia_de_Dados.pdf" download>Ciência de Dados</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>João Marcos Vilaça Marques. Cotia, SP.</p>
+      <p>Site estático, feito à mão. Atualizado em 18/11/2026.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
